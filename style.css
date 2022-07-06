@@ -1,4 +1,11 @@
 body {
+  --blue: rgb(83, 138, 255);
+  --green: rgb(125, 238, 59);
+  --beige: #f7fcfe;
+  --correct-input: yellowgreen;
+  --correct-border: green;
+  --wrong-input: rgb(240, 82, 42);
+  --wrong-border: red;
   font-family: sans-serif;
   font-size: 120%;
 
@@ -10,14 +17,14 @@ body {
   min-height: 100vh;
   padding: 30px 0px;
 
-  background-color: rgb(83, 138, 255);
-  color: rgb(125, 238, 59);
+  background-color: var(--blue);
+  color: var(--green);
 }
 
 span {
   font-family: 'Mochiy Pop P One', sans-serif;
   padding: 4px;
-  background-color: whitesmoke;
+  background-color: var(--beige);
   border-radius: 3px;
   margin-bottom: 3px;
 }
@@ -33,7 +40,7 @@ input {
   padding: 11px 20px;
   margin-top: 10px;
   margin-bottom: 16px;
-  background-color: whitesmoke;
+  background-color: var(--beige);
   border-radius: 13px;
   font-family: 'Mochiy Pop P One', sans-serif;
   border: 3px solid transparent;
@@ -45,11 +52,11 @@ label {
 
 .acertou {
   color: rgb(83, 138, 255);
-  border: 3px solid green;
-  background-color: yellowgreen;
+  border: 3px solid var(--correct-border);
+  background-color: var(--correct-input);
 }
 
 .errou {
-  border: 3px solid red;
-  background-color: rgb(240, 82, 42);
+  border: 3px solid var(--wrong-border);
+  background-color: var(--wrong-input);
 }
